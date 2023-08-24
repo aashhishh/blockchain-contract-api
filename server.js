@@ -167,7 +167,7 @@ const PersonalInfo = sequelize.define('Identity', {
     timestamps: false
 });
 
-// Update token API
+// Update token on the database
 app.post('/updateToken', async (req, res) => {
     try {
         const { user_id, token } = req.body;
