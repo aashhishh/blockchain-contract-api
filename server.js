@@ -81,7 +81,7 @@ const { exec } = require('child_process');
 
 //Creating NFT and minting the same
 app.post('/MintNFT', (req, res) => {
-    const tokenURI = req.body.tokenURI;
+    const tokenURI = req.body.cid;
 
     if (!tokenURI) {
         return res.status(400).send('Missing required parameter: tokenURI.');
